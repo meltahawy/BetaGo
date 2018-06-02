@@ -1,5 +1,5 @@
 # BetaGo
-BetaGo is a graphical user interface for the game of Go with a built-in AI. It is built using Python + TkInter. Users can opt to play 2 player with a friend locally. They can also play against BetaGo, an AI that is built with the Monte Carlo Search Tree technique and can run 500 simulations/sec. The GUI is flexible and users can opt to play on any size board they please. The game rules are as follows: no illegal ko moves, no suicides, and area scoring.
+BetaGo is a graphical user interface for the game of Go with a built-in AI. It is built using Python + TkInter. Users can opt to play 2 player with a friend locally. They can also play against BetaGo, an AI that is built with the Monte Carlo Tree Search technique and can run 500 simulations/sec. The GUI is flexible and users can opt to play on any size board they please. The game rules are as follows: no illegal ko moves, no suicides, and area scoring.
 
 # Demo:
 5x5 BetaGo against the AI (white)
@@ -11,7 +11,7 @@ BetaGo can search/simulate 546 nodes/sec on a 5x5 board.
 
 # Documentation
 
-The AI finds the next best move using the Monte Carlo Search Tree technique. The root of the search tree is the current state of the game (normally the black stone player has just played) then for the amount of time decided by the user, the Monte Carlo Search Tree repeats the following 4 phases:
+The AI finds the next best move using the Monte Carlo Tree Search technique. The root of the search tree is the current state of the game (normally the black stone player has just played) then for the amount of time decided by the user, the Monte Carlo Tree Search repeats the following 4 phases:
 
 ### 1. Selection
 
@@ -36,7 +36,7 @@ The result of simulation/heavy playout are added to the stats of the node simula
 
 ## Summary:
 
-Black plays at position (0, 0). A MCTS (Monte Carlo Search Tree) node, let's call it black1 is created and a Monte Carlo Search Tree is created. Black1 becomes the root of the tree. Since the root is the only node in the tree, it is selected. Then expansion occurs, all possible white moves considering black played at (0, 0) are added as children to black1. Then one of these children are selected to be simulated from game start to game end (NOT AFFECTING THE NODE), let's say white1 is selected, a copy of white1 is created and a simulated game is played on the copy of white1, the result of the game is recorded and added to the stats of white1. Then that result is backpropogated all the way to the first ancestor of white1, updating every node encountered along the way.
+Black plays at position (0, 0). A MCTS (Monte Carlo Tree Search) node, let's call it black1 is created and a Monte Carlo Search Tree is created. Black1 becomes the root of the tree. Since the root is the only node in the tree, it is selected. Then expansion occurs, all possible white moves considering black played at (0, 0) are added as children to black1. Then one of these children are selected to be simulated from game start to game end (NOT AFFECTING THE NODE), let's say white1 is selected, a copy of white1 is created and a simulated game is played on the copy of white1, the result of the game is recorded and added to the stats of white1. Then that result is backpropogated all the way to the first ancestor of white1, updating every node encountered along the way.
 
 ## Logistics: 
 
