@@ -4,6 +4,8 @@ BetaGo is a graphical user interface for the game of Go with a built-in AI. It i
 # Demo:
 5x5 BetaGo against the AI (white)
 
+BetaGo can search/simulate 546 nodes/sec on a 5x5 board.
+
 
 ![BetaGo Demo](https://raw.githubusercontent.com/meltahawy/meltahawy.github.io/master/img/BetaGo.png)
 
@@ -41,3 +43,18 @@ Black plays at position (0, 0). A MCTS (Monte Carlo Search Tree) node, let's cal
 The GUI is created using TkInter. Every intersection has an invisible placeholder button that when clicked becomes the image of either a white stone or a black stone.
 
 Users can change the size of the board as they please in the constructor of the GameBoard class
+
+The AI is coded to only play White. 
+
+## TO DO:
+
+- The game score method needs a lot of improvement. It cannot account for dead pieces after a game is over. For example, if white plays in black territory and the game is over, this function will give points to white for having pieces on the board and will not count that territory as black territory.
+- Allow AI to play as black/give the player the option of playing whatever color they please against the AI.
+- Display stats (stones captured).
+- Implement the pass feature for both player and AI. (Easy to make for the AI, as it will pass if no valid moves left).
+- Parallelize the code for better performance.
+- Clean up code/refactor.
+#### Experiemnt with: 
+- Expand node only if simulated at least k times.
+- Implement Dynamic Komi
+- Integrate other proven successful methods with MCTS such as RAVE.
