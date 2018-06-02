@@ -9,6 +9,16 @@ BetaGo can search/simulate 546 nodes/sec on a 5x5 board.
 
 ![BetaGo Demo](https://raw.githubusercontent.com/meltahawy/meltahawy.github.io/master/img/BetaGo.png)
 
+# Instructions:
+
+Download Python 3.x and run the program through IDLE. Click on the intersections to play vs. the AI.
+
+Read the comments and documentation and logistics if you would like to customize certain aspects. 
+
+The AI is coded to only play White.
+
+Comment out the 2nd ClickHandler function and uncomment the first one to play against a friend locally. The AI is enabled by default.
+
 # Documentation
 
 The AI finds the next best move using the Monte Carlo Tree Search technique. The root of the search tree is the current state of the game (normally the black stone player has just played) then for the amount of time decided by the user, the Monte Carlo Tree Search repeats the following 4 phases:
@@ -43,8 +53,6 @@ Black plays at position (0, 0). A MCTS (Monte Carlo Tree Search) node, let's cal
 The GUI is created using TkInter. Every intersection has an invisible placeholder button that when clicked becomes the image of either a white stone or a black stone.
 
 Users can change the size of the board as they please in the constructor of the GameBoard class
-
-The AI is coded to only play White. 
 
 After every move, a text file called 'out.txt' is created. This text file contains a level order traversal of the Monte Carlo Search Tree.
 
