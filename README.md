@@ -54,7 +54,7 @@ The AI is coded to only play White.
 - Implement the pass feature for both player and AI. (Easy to make for the AI, as it will pass if no valid moves left).
 - Parallelize the code for better performance.
 - Clean up code/refactor.
-#### Experiemnt with: 
+#### Experiment with: 
 - Expand node only if simulated at least k times.
 - Implement Dynamic Komi
 - Integrate other proven successful methods with MCTS such as RAVE.
