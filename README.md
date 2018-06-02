@@ -1,5 +1,5 @@
 # BetaGo
-BetaGo is a graphical user interface for the game of Go with a built-in AI. It is built using Python + TkInter. Users can opt to play 2 player with a friend locally. They can also play against BetaGo, an AI that is built with the Monte Carlo Tree Search technique and can run 500 simulations/sec. The GUI is flexible and users can opt to play on any size board they please. The game rules are as follows: no illegal ko moves, no suicides, and area scoring.
+BetaGo is a graphical user interface for the game of Go with a built-in AI. Users can opt to play 2 player with a friend locally. They can also play against BetaGo, an AI that is built with the Monte Carlo Tree Search technique and can run 500 simulations/sec. The GUI is flexible and users can opt to play on any size board they please. The game rules are as follows: no illegal ko moves, no suicides, and area scoring. It is built using Python + TkInter.
 
 # Demo:
 5x5 BetaGo against the AI (white)
