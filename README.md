@@ -46,6 +46,8 @@ Users can change the size of the board as they please in the constructor of the 
 
 The AI is coded to only play White. 
 
+After every move, a text file called 'out.txt' is created. This text file contains a level order traversal of the Monte Carlo Search Tree.
+
 ## TO DO:
 
 - The game score method needs a lot of improvement. It cannot account for dead pieces after a game is over. For example, if white plays in black territory and the game is over, this function will give points to white for having pieces on the board and will not count that territory as black territory.
