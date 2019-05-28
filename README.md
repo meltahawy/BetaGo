@@ -7,7 +7,7 @@ BetaGo is a graphical user interface for the game of Go with a built-in AI. User
 BetaGo can search/simulate 546 nodes/sec on a 5x5 board.
 
 
-![BetaGo Demo](https://raw.githubusercontent.com/meltahawy/meltahawy.github.io/master/img/BetaGo.png)
+![BetaGo Demo](/BetaGo.png)
 
 # Instructions:
 
